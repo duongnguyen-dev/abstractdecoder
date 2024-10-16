@@ -1,6 +1,3 @@
-[submodule "abstract_to_skim/datasets/pubmed-rct"]
-	path = abstract_to_skim/datasets/pubmed-rct
-	url = https://github.com/Franck-Dernoncourt/pubmed-rct.git
 [submodule "abstract-to-skim/datasets/pubmed-rct"]
 	path = abstract-to-skim/datasets/pubmed-rct
 	url = https://github.com/Franck-Dernoncourt/pubmed-rct.git
