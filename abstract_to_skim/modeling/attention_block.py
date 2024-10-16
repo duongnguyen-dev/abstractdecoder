@@ -1,5 +1,5 @@
 import tensorflow as tf 
-from abstract_to_skim.backbone.feed_forward_block import FeedForwardBlock
+from abstract_to_skim.modeling.feed_forward_block import FeedForwardBlock
 
 class AttentionBlock(tf.keras.layers.Layer):
     def __init__(self, embed_dim, num_heads, ff_dim, dropout_rate):
