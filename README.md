@@ -15,6 +15,7 @@ AbstractDecoder is an NLP-powered tool designed to automate the classification a
 - [ ] Everthing you need to serve this model on Cloud
 
 ## My model 
+- A multi-inputs model with Transformer Encoder Only for text classification
 <p align="center">
   <img src="https://github.com/duongnguyen-dev/abstractdecoder/blob/main/assets/abstractdecoder.drawio.png" width="50%" height="50%" />
 </p>
