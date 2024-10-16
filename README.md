@@ -14,11 +14,24 @@ AbstractDecoder is an NLP-powered tool designed to automate the classification a
 - [ ] UI for usecase
 - [ ] Everthing you need to serve this model on Cloud
 
-## Our model 
+## My model 
 
 ## Comparing with previous model
 
 ## Environment setup
 - Requirement: Python 3.9, [Conda](https://docs.anaconda.com/miniconda/)
 - Clone this repositor:<br>
-`git clone --recurse-submodules https://github.com/duongnguyen-dev/abstractdecoder`
+```
+git clone --recurse-submodules https://github.com/duongnguyen-dev/abstractdecoder.git
+```
+
+- Create conda environment and related packages:<br>
+```
+conda create -n abstractdecoder python=3.9
+conda activate abstractdecoder
+pip install -e .
+```
+## References
+- This project uses dataset from [PubMed RCT Dataset](https://github.com/Franck-Dernoncourt/pubmed-rct)
+- My work is trying to surpass the model performance from this paper [Neural Networks for Joint Sentence Classification
+in Medical Paper Abstracts](https://arxiv.org/pdf/1612.05251)
