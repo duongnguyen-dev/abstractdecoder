@@ -5,7 +5,7 @@ import pandas as pd
 from time import time
 from loguru import logger
 from sklearn.preprocessing import OneHotEncoder
-from abstract_to_skim.datasets.cfg import CFG
+from abstractdecoder.datasets.cfg import CFG
 # from multiprocessing import Process, Manager
 
 def get_dataset_path(datatype: str, with_sign=True):

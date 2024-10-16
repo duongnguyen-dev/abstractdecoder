@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf 
-from abstract_to_skim.datasets.cfg import CFG
+from abstractdecoder.datasets.cfg import CFG
 
 def find_output_sequences_length(sequences):
     sequences_length = [len(s.split()) for s in sequences]

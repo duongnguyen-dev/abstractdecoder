@@ -1,5 +1,5 @@
 import tensorflow as tf
-from abstract_to_skim.cfg import ModelCFG
+from abstractdecoder.cfg import ModelCFG
 
 class ClassificationMetrics(tf.keras.metrics.Metric):
     def __init__(self, num_classes=ModelCFG.NUM_CLASSES, **kwargs):

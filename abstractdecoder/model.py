@@ -1,10 +1,10 @@
 import tensorflow as tf
 import pandas as pd
-from abstract_to_skim.modeling.attention_block import AttentionBlock
-from abstract_to_skim.modeling.embedding_layer import PositionEmbeddingLayer
-from abstract_to_skim.cfg import ModelCFG
-from abstract_to_skim.datasets.utils import text_vectorization
-from abstract_to_skim.datasets.transform import preprocessing_data, get_data_ready
+from abstractdecoder.modeling.attention_block import AttentionBlock
+from abstractdecoder.modeling.embedding_layer import PositionEmbeddingLayer
+from abstractdecoder.cfg import ModelCFG
+from abstractdecoder.datasets.utils import text_vectorization
+from abstractdecoder.datasets.transform import preprocessing_data, get_data_ready
 
 class TransformerEncoderModel(tf.keras.Model):
     def __init__(self, 

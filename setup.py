@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 def get_version():
     """Get package version from info.py file"""
-    filename = "abstract_to_skim/info.py"
+    filename = "abstractdecoder/info.py"
     with open(filename, encoding="utf-8") as f:
         match = re.search(
             r"""^__version__ = ['"]([^'"]*)['"]""", f.read(), re.M
@@ -17,11 +17,11 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="abstract-to-skim",
+    name="abstractdecoder",
     version=get_version(),
     author="Duong Nguyen",
     author_email="duongng2911@gmail.com",
-    description="Turning paper's abstract into the format that more skimmable.",
+    description="An NLP-powered tool designed to classify each sentence of a clinical trial abstract into its specific role",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/duongnguyen-dev/abstract-to-skim/tree/main",
@@ -41,9 +41,4 @@ setup(
         "loguru==0.7.2",
         "pandas==2.2.3"
     ],
-    entry_points={
-        "console_scripts": [
-            "abstract-to-skim train=abstract_to_skim.train:main",
-        ]
-    }
 )
