@@ -19,4 +19,6 @@ AbstractDecoder is an NLP-powered tool designed to automate the classification a
 ## Comparing with previous model
 
 ## Environment setup
-- Requirement: 
+- Requirement: Python 3.9, [Conda](https://docs.anaconda.com/miniconda/)
+- Clone this repositor:<br>
+`git clone --recurse-submodules https://github.com/duongnguyen-dev/abstractdecoder`
