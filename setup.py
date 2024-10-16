@@ -1,19 +1,37 @@
+import re
 from setuptools import setup, find_packages
+
+def get_version():
+    """Get package version from info.py file"""
+    filename = "abstract_to_skim/info.py"
+    with open(filename, encoding="utf-8") as f:
+        match = re.search(
+            r"""^__version__ = ['"]([^'"]*)['"]""", f.read(), re.M
+        )
+    if not match:
+        raise RuntimeError(f"{filename} doesn't contain __version__")
+    version = match.groups()[0]
+    return version
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name="abstract-to-skim",
-    version="0.1.0",
+    version=get_version(),
     author="Duong Nguyen",
     author_email="duongng2911@gmail.com",
     description="Turning paper's abstract into the format that more skimmable.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/duongnguyen-dev/abstract-to-skim/tree/main",
+    license='Apache License 2.0',
     packages=find_packages(),
-    classifiers=[],
+    classifiers=[
+        "Operating System :: OS Independent",
+        'License :: OSI Approved :: Apache Software License',
+        "Programming Language :: Python :: 3 :: Only",
+    ],
     python_requires=">=3.9",
     install_requires=[
         "scikit-learn==1.5.2",
