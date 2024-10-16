@@ -21,7 +21,7 @@ setup(
     version=get_version(),
     author="Duong Nguyen",
     author_email="duongng2911@gmail.com",
-    description="An NLP-powered tool designed to classify each sentence of a clinical trial abstract into its specific role",
+    description="An NLP-powered tool designed to classify each sentence of a clinical trial abstract into its specific role.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/duongnguyen-dev/abstract-to-skim/tree/main",
