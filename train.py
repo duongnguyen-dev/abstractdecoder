@@ -1,11 +1,11 @@
 import pandas as pd
 import tensorflow as tf 
 from argparse import ArgumentParser
-from abstract_to_skim.datasets.transform import *
-from abstract_to_skim.datasets.utils import *
-from abstract_to_skim.model import TransformerEncoderModel
-from abstract_to_skim.metrics import ClassificationMetrics
-from abstract_to_skim.callbacks import *
+from abstractdecoder.datasets.transform import *
+from abstractdecoder.datasets.utils import *
+from abstractdecoder.model import TransformerEncoderModel
+from abstractdecoder.metrics import ClassificationMetrics
+from abstractdecoder.callbacks import *
 
 if __name__ == "__main__":
     parser = ArgumentParser()
