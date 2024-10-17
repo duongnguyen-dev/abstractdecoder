@@ -15,7 +15,7 @@ def get_dataset_path(datatype: str, with_sign=True):
     with_sign (boolean): if true, using dataset that numbers have been replaced with sign  
     """
 
-    data_dir = "./abstract_to_skim/datasets/pubmed-rct"
+    data_dir = "./abstractdecoder/datasets/pubmed-rct"
 
     if datatype not in ["20k", "200k"]:
         logger.error("Unsupported dataset...")
